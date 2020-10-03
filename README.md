@@ -13,5 +13,5 @@ Fixed timestep has been set to 0.012 from 0.2 to get better results (Project set
 
 # Recommended hover ship settings
 
-![Alt text](Screenshots/RecommendedSettings.jpg?raw=true "Recommended")
+![Alt text](Screenshots/RecommendedSettings.png?raw=true "Recommended")
 
