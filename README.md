@@ -1,7 +1,7 @@
 # Unity-Hover-Ship-Controller
 
-Video showcase: https://www.youtube.com/watch?v=1i9Xz7Etlh4
-Example project of a hover ship controller that needes only 1 script
+- Example project of a hover ship controller that needes only 1 script
+- Video showcase: https://www.youtube.com/watch?v=1i9Xz7Etlh4
 
 # Project uses Unity 2020.1.6f1 and URP 8.2.0
 
