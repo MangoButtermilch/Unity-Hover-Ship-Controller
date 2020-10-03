@@ -1,6 +1,8 @@
 # Unity-Hover-Ship-Controller
 
 - Example project of a hover ship controller that needes only 1 script
+- Note that it is still pretty buggy and not all perfect but it works
+- Also collision handling sucks a lot
 - Video showcase: https://www.youtube.com/watch?v=1i9Xz7Etlh4
 
 # Project uses Unity 2020.1.6f1 and URP 8.2.0
