@@ -1,4 +1,4 @@
-# Lightweight Unity hover ship controller
+# Lightweight hover ship controller for Unity
 
 - Example project of a hover ship controller that needes only 1 script
 - Note that it is still pretty buggy and not all perfect but it works
