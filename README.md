@@ -4,6 +4,7 @@
 - Note that it is still pretty buggy and not all perfect but it works
 - Also collision handling sucks a lot
 - Video showcase: https://www.youtube.com/watch?v=1i9Xz7Etlh4
+- Last project I used this for https://www.youtube.com/watch?v=O8RazeJlRL4
 
 # Project uses Unity 2020.1.6f1 and URP 8.2.0
 
