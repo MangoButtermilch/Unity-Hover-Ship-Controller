@@ -15,6 +15,7 @@
 
 - The project comes with Xbox controller support. You can look it up in /ProjectSettings/InputManager.asset
 - Fixed timestep has been set to 0.012 from 0.2 to get better results (Project settings > Time)
+- Video showcase also uses Cinemachine for the camera controls
 
 # Recommended hover ship settings
 
