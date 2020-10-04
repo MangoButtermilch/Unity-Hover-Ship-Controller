@@ -9,7 +9,7 @@ namespace Buttermilch {
         [SerializeField] private float _fwdMaxSpeed = 200f; //max speed without boosting
         private float _oldFwdMaxSpeed;
         [SerializeField] private float _maxBoost = 300f; //max speed with boosting
-        [SerializeField] private float _brakeSpeed = 70f; 
+        [SerializeField] private float _brakeSpeed = 70f;
         [SerializeField] private float _turnSpeed = 10f;
         [SerializeField] private float _turnSpeedInAir = 3f;
         private float _input = 0f; //horizontal axis
@@ -35,8 +35,8 @@ namespace Buttermilch {
         [SerializeField] private float _dropOffTime = 0.2f;
         private bool _isDroppingOff;
         private float _oldDropOffTime;
-        [SerializeField] private float _rotationLerp = 7f;//how fast we will rotate towards the ground if ship is in the air
-        [SerializeField] private float _positionLerp = 5f;//how fast we will sink down if ship is in the air
+        [SerializeField] private float _rotationLerp = 7f; //how fast we will rotate towards the ground if ship is in the air
+        [SerializeField] private float _positionLerp = 5f; //how fast we will sink down if ship is in the air
         private float _oldPositionLerp;
         private bool _dropOffForceAdded;
 
@@ -237,7 +237,13 @@ namespace Buttermilch {
         private void Accelerate (float speed) {
             //if current speed is greater than max speed, only add 0f so we don't get faster and faster
             //else apply our acceleration
+            if (_currentFuel <= 0f) {
+                _currentSpeed = Mathf.Lerp (_currentSpeed, 0f, 1f * Time.deltaTime);
+                return;
+            }
+
             _currentSpeed += (_currentSpeed >= _fwdMaxSpeed) ? 0f : speed * Time.deltaTime;
+            _currentFuel -= IsBoosting () ? _fuelConsumption * 2 * Time.deltaTime : _fuelConsumption * Time.deltaTime;
         }
 
         private bool HasInput () {
