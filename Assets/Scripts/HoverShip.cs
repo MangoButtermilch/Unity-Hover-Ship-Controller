@@ -235,14 +235,15 @@ namespace Buttermilch {
         }
 
         private void Accelerate (float speed) {
-            //if current speed is greater than max speed, only add 0f so we don't get faster and faster
-            //else apply our acceleration
+            //stop acceleration if we are out of fuel
             if (_currentFuel <= 0f) {
                 _currentSpeed = Mathf.Lerp (_currentSpeed, 0f, 1f * Time.deltaTime);
                 return;
             }
-
+             //if current speed is greater than max speed, only add 0f so we don't get faster and faster
+            //else apply our acceleration
             _currentSpeed += (_currentSpeed >= _fwdMaxSpeed) ? 0f : speed * Time.deltaTime;
+            //reduce fuel
             _currentFuel -= IsBoosting () ? _fuelConsumption * 2 * Time.deltaTime : _fuelConsumption * Time.deltaTime;
         }
 
