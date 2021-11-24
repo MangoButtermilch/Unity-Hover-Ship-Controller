@@ -5,6 +5,7 @@
 - Also collision handling sucks a lot
 - Video showcase: https://www.youtube.com/watch?v=1i9Xz7Etlh4
 - Last project I used this for https://www.youtube.com/watch?v=O8RazeJlRL4
+- Most recent project https://www.youtube.com/watch?v=tdMdTdHcBDo (used for player, AIs & projectiles)
 
 # Project uses Unity 2020.1.6f1 and URP 8.2.0
 
